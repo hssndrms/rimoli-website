@@ -1,0 +1,216 @@
+{
+  "tr": {
+    "nav": {
+      "home": "Ana Sayfa",
+      "about": "Hakkımızda",
+      "products": "Ürünlerimiz",
+      "contact": "İletişim"
+    },
+    "hero": {
+      "title": "Kaliteli Erkek Pijama Toptan Satış",
+      "description": "Türkiye\"nin önde gelen erkek pijama üreticisi olarak, en kaliteli kumaşlarla üretilmiş konforlu ve şık ürünlerimizi keşfedin. Toptan satışlarımızla işinizi büyütün.",
+      "cta": {
+        "quote": "İletişim Kur",
+        "discover": "Ürünleri Keşfet"
+      }
+    },
+    "features": {
+      "quality": {
+        "title": "Premium Kalite",
+        "desc": "En kaliteli kumaşlar ve üstün işçilik ile üretilen ürünlerimiz uzun ömürlü kullanım sağlar."
+      },
+      "delivery": {
+        "title": "Hızlı Teslimat",
+        "desc": "Siparişleriniz özenle hazırlanıp en kısa sürede kargonuza teslim edilir."
+      },
+      "satisfaction": {
+        "title": "Müşteri Memnuniyeti",
+        "desc": "Müşteri odaklı yaklaşımımız ile her zaman memnuniyetinizi ön planda tutuyoruz."
+      }
+    },
+    "products": {
+      "title": "Ürün Kategorilerimiz",
+      "subtitle": "Farklı mevsim ve ihtiyaçlara uygun geniş ürün yelpazemiz ile her zevke hitap eden erkek pijama çeşitlerimizi keşfedin.",
+      "categories": {
+        "winter": {
+          "title": "Kışlık Pijamalar",
+          "desc": "Soğuk kış gecelerinde sıcak tutacak polar ve kalın pamuklu pijama takımları."
+        },
+        "summer": {
+          "title": "Yazlık Pijamalar",
+          "desc": "Sıcak yaz gecelerinde ferah ve konforlu ince pamuklu pijama takımları."
+        },
+        "cotton": {
+          "title": "Pamuklu Pijamalar",
+          "desc": "Doğal %100 pamuklu kumaştan üretilen nefes alabilir ve konforlu pijama takımları."
+        },
+        "satin": {
+          "title": "Saten Pijamalar",
+          "desc": "Lüks görünüm ve yumuşak dokunuş sunan premium saten pijama takımları."
+        },
+        "fleece": {
+          "title": "Polar Pijamalar",
+          "desc": "Ekstra sıcak tutan yumuşak polar kumaştan üretilen kışlık pijama takımları."
+        },
+        "homewear": {
+          "title": "Ev Giyim Setleri",
+          "desc": "Hem evde rahat hem de şık görünmek isteyenler için özel tasarım ev giyim setleri."
+        }
+      }
+    },
+    "about": {
+      "title": "Hakkımızda",
+      "content": "2005 yılında İstanbul\"da kurulan firmamız, erkek pijama üretimi ve toptan satışı konusunda Türkiye\"nin önde gelen markalarından biri haline gelmiştir.",
+      "mission": {
+        "title": "Misyonumuz",
+        "desc": "Kaliteli, konforlu ve şık erkek pijama ürünlerini uygun fiyatlarla müşterilerimize sunmak."
+      },
+      "vision": {
+        "title": "Vizyonumuz",
+        "desc": "Erkek pijama sektöründe global ölçekte tanınan bir marka olmak."
+      },
+      "keyfigures": {
+        "experience": "Yıllık Deneyim",
+        "employee": "Çalışan",
+        "export": "İhracat Ülkesi",
+        "production": "Günlük Üretim",
+        "area": "m2 Üretim Alanı"
+      }
+    },
+    "contact": {
+      "title": "İletişim",
+      "subtitle": "Sorularınız, talepleriniz veya toptan satış fiyatları hakkında bilgi almak için bize ulaşın.",
+      "formTitle": "Bize Ulaşın",
+      "form": {
+        "name": "Ad Soyad*",
+        "company": "Firma Adı*",
+        "email": "E-posta*",
+        "phone": "Telefon",
+        "subject": "Konu*",
+        "message": "Mesajınız*",
+        "consent": "Kişisel verilerimin işlenmesine izin veriyorum.",
+        "submit": "Gönder"
+      },
+      "infoTitle": "İletişim Bilgilerimiz",
+      "info": {
+        "address": "Adres",
+        "phone": "Telefon",
+        "email": "E-posta",
+        "hours": "Çalışma Saatleri",
+        "social": "Sosyal Medya"
+      },
+      "map": {
+        "store": "Mağaza",
+        "factory": "Fabrika"
+      }
+    },
+    "copyright": "© 2025 Rimoli Tekstil. Tüm hakları saklıdır."
+  },
+  "en": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "products": "Products",
+      "contact": "Contact"
+    },
+    "hero": {
+      "title": "Quality Men\"s Pajamas Wholesale",
+      "description": "Discover our comfortable and stylish products made with the highest quality fabrics as Turkey\"s leading men\"s pajama manufacturer. Grow your business with our wholesale options.",
+      "cta": {
+        "quote": "Contact Us",
+        "discover": "Discover Products"
+      }
+    },
+    "features": {
+      "quality": {
+        "title": "Premium Quality",
+        "desc": "Our products provide long-lasting use with the highest quality fabrics and superior workmanship."
+      },
+      "delivery": {
+        "title": "Fast Delivery",
+        "desc": "Your orders are carefully prepared and delivered to your cargo in the shortest time."
+      },
+      "satisfaction": {
+        "title": "Customer Satisfaction",
+        "desc": "We always prioritize your satisfaction with our customer-focused approach."
+      }
+    },
+    "products": {
+      "title": "Product Categories",
+      "subtitle": "Discover our men\"s pajama varieties that appeal to every taste with our wide product range suitable for different seasons and needs.",
+      "categories": {
+        "winter": {
+          "title": "Winter Pajamas",
+          "desc": "Fleece and thick cotton pajama sets to keep you warm on cold winter nights."
+        },
+        "summer": {
+          "title": "Summer Pajamas",
+          "desc": "Fresh and comfortable thin cotton pajama sets for hot summer nights."
+        },
+        "cotton": {
+          "title": "100% Cotton Pajamas",
+          "desc": "Breathable and comfortable pajama sets made from natural 100% cotton fabric."
+        },
+        "satin": {
+          "title": "Satin Pajamas",
+          "desc": "Premium satin pajama sets offering luxurious appearance and soft touch."
+        },
+        "fleece": {
+          "title": "Fleece Pajamas",
+          "desc": "Winter pajama sets made from soft fleece fabric that keeps extra warm."
+        },
+        "homewear": {
+          "title": "Homewear Sets",
+          "desc": "Special design homewear sets for those who want to look both comfortable and stylish at home."
+        }
+      }
+    },
+    "about": {
+      "title": "About Us",
+      "content": "Founded in Istanbul in 2005, our company has become one of Turkey\"s leading brands in men\"s pajama production and wholesale.",
+      "mission": {
+        "title": "Our Mission",
+        "desc": "To offer quality, comfortable and stylish men\"s pajama products to our customers at affordable prices."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "desc": "To become a globally recognized brand in the men\"s pajama sector."
+      },
+      "keyfigures": {
+        "experience": "Years of Experience",
+        "employee": "Employees",
+        "export": "Export Countries",
+        "production": "Daily Production",
+        "area": "m2 Production Area"
+      }
+    },
+    "contact": {
+      "title": "Contact",
+      "subtitle": "Contact us for your questions, requests or information about wholesale prices.",
+      "formTitle": "Get in Touch",
+      "form": {
+        "name": "Full Name*",
+        "company": "Company Name*",
+        "email": "Email*",
+        "phone": "Phone",
+        "subject": "Subject*",
+        "message": "Your Message*",
+        "consent": "I consent to the processing of my personal data.",
+        "submit": "Send"
+      },
+      "infoTitle": "Contact Information",
+      "info": {
+        "address": "Address",
+        "phone": "Phone",
+        "email": "Email",
+        "hours": "Working Hours",
+        "social": "Social Media"
+      },
+      "map": {
+        "store": "Store",
+        "factory": "Factory"
+      }
+    },
+    "copyright": "© 2025 Rimoli Textile. All rights reserved."
+  }
+}

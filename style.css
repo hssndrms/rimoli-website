@@ -1,0 +1,105 @@
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Inter', sans-serif;
+}
+.dark {
+background-color: #111827;
+color: #f3f4f6;
+}
+.dark .bg-white {
+background-color: #1f2937;
+}
+.dark .text-gray-700 {
+color: #d1d5db;
+}
+.dark .text-gray-600 {
+color: #e5e7eb;
+}
+.dark .text-gray-800 {
+color: #f3f4f6;
+}
+.dark .text-gray-900 {
+color: #f9fafb;
+}
+.dark .border-gray-200 {
+border-color: #374151;
+}
+.dark .bg-gray-50 {
+background-color: #1f2937;
+}
+.dark .bg-gray-100 {
+background-color: #374151;
+}
+.dark .shadow-lg {
+box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+.hero-section {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://readdy.ai/api/search-image?query=Professional%2520men%2527s%2520pajama%2520production%2520facility%2520with%2520high-quality%2520fabrics%2520and%2520modern%2520manufacturing%2520equipment.%2520The%2520image%2520shows%2520elegant%2520and%2520comfortable%2520men%2527s%2520pajamas%2520in%2520various%2520styles%2520and%2520patterns%2520on%2520the%2520right%2520side%2520with%2520a%2520clean%2520gradient%2520background%2520on%2520the%2520left%2520for%2520text%2520placement.%2520The%2520overall%2520atmosphere%2520is%2520professional%2520and%2520high-end.&width=1920&height=800&seq=1&orientation=landscape');
+background-size: cover;
+background-position: center;
+}
+.product-card:hover .product-overlay {
+opacity: 1;
+}
+.custom-checkbox {
+position: relative;
+padding-left: 30px;
+cursor: pointer;
+}
+.custom-checkbox input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+}
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 20px;
+width: 20px;
+border: 2px solid #3176FF;
+border-radius: 4px;
+}
+.custom-checkbox input:checked ~ .checkmark:after {
+content: "";
+position: absolute;
+display: block;
+left: 6px;
+top: 2px;
+width: 5px;
+height: 10px;
+border: solid #3176FF;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+}
+.theme-toggle {
+width: 50px;
+height: 24px;
+background-color: #e5e7eb;
+border-radius: 999px;
+position: relative;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+.theme-toggle.dark {
+background-color: #4b5563;
+}
+.theme-toggle-circle {
+width: 20px;
+height: 20px;
+background-color: white;
+border-radius: 50%;
+position: absolute;
+top: 2px;
+left: 2px;
+transition: transform 0.3s;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fbbf24;
+}
+.theme-toggle.dark .theme-toggle-circle {
+transform: translateX(26px);
+background-color: #1f2937;
+color: #f3f4f6;
+}

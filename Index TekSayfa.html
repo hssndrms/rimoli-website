@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="rimoliHeaderLogo.png">
+<title>Erkek Pijama Toptan Satış | Kaliteli Ürünler | Rimoli Tekstil</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#3176FF',secondary:'#f8fafc'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Inter', sans-serif;
+}
+.dark {
+background-color: #111827;
+color: #f3f4f6;
+}
+.dark .bg-white {
+background-color: #1f2937;
+}
+.dark .text-gray-700 {
+color: #d1d5db;
+}
+.dark .text-gray-600 {
+color: #e5e7eb;
+}
+.dark .text-gray-800 {
+color: #f3f4f6;
+}
+.dark .text-gray-900 {
+color: #f9fafb;
+}
+.dark .border-gray-200 {
+border-color: #374151;
+}
+.dark .bg-gray-50 {
+background-color: #1f2937;
+}
+.dark .bg-gray-100 {
+background-color: #374151;
+}
+.dark .shadow-lg {
+box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+.hero-section {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://readdy.ai/api/search-image?query=Professional%2520men%2527s%2520pajama%2520production%2520facility%2520with%2520high-quality%2520fabrics%2520and%2520modern%2520manufacturing%2520equipment.%2520The%2520image%2520shows%2520elegant%2520and%2520comfortable%2520men%2527s%2520pajamas%2520in%2520various%2520styles%2520and%2520patterns%2520on%2520the%2520right%2520side%2520with%2520a%2520clean%2520gradient%2520background%2520on%2520the%2520left%2520for%2520text%2520placement.%2520The%2520overall%2520atmosphere%2520is%2520professional%2520and%2520high-end.&width=1920&height=800&seq=1&orientation=landscape');
+background-size: cover;
+background-position: center;
+}
+.product-card:hover .product-overlay {
+opacity: 1;
+}
+.custom-checkbox {
+position: relative;
+padding-left: 30px;
+cursor: pointer;
+}
+.custom-checkbox input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+}
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 20px;
+width: 20px;
+border: 2px solid #3176FF;
+border-radius: 4px;
+}
+.custom-checkbox input:checked ~ .checkmark:after {
+content: "";
+position: absolute;
+display: block;
+left: 6px;
+top: 2px;
+width: 5px;
+height: 10px;
+border: solid #3176FF;
+border-width: 0 2px 2px 0;
+transform: rotate(45deg);
+}
+.theme-toggle {
+width: 50px;
+height: 24px;
+background-color: #e5e7eb;
+border-radius: 999px;
+position: relative;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+.theme-toggle.dark {
+background-color: #4b5563;
+}
+.theme-toggle-circle {
+width: 20px;
+height: 20px;
+background-color: white;
+border-radius: 50%;
+position: absolute;
+top: 2px;
+left: 2px;
+transition: transform 0.3s;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #fbbf24;
+}
+.theme-toggle.dark .theme-toggle-circle {
+transform: translateX(26px);
+background-color: #1f2937;
+color: #f3f4f6;
+}
+</style>
+</head> 
+<body class="bg-white text-gray-800 min-h-screen">
+<!-- Header -->
+<header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50 transition-all duration-300">
+<div class="container mx-auto px-4 py-3 flex items-center justify-between">
+<a href="#" class="flex items-center">
+<img src="RimoliLogo.png" alt="Rimoli Tekstil" class="h-20 w-auto object-contain">
+</a>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="#home" class="font-medium hover:text-primary transition-colors">Ana Sayfa</a>
+<a href="#about" class="font-medium hover:text-primary transition-colors">Hakkımızda</a>
+<a href="#products" class="font-medium hover:text-primary transition-colors">Ürünlerimiz</a>
+<a href="#contact" class="font-medium hover:text-primary transition-colors">İletişim</a>
+</nav>
+<div class="flex items-center space-x-4">
+<div class="theme-toggle" id="themeToggle">
+<div class="theme-toggle-circle">
+<i class="ri-sun-line ri-sm"></i>
+</div>
+</div>
+<div class="relative" id="languageSelector">
+<button class="flex items-center space-x-1 font-medium" id="languageButton">
+<span id="selectedLanguage">TR</span>
+<div class="w-4 h-4 flex items-center justify-center">
+<i class="ri-arrow-down-s-line"></i>
+</div>
+</button>
+<div class="absolute right-0 mt-2 w-24 bg-white shadow-lg rounded hidden dark:bg-gray-800" id="languageDropdown">
+<button class="w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700" data-lang="tr">TR</button>
+<button class="w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700" data-lang="en">EN</button>
+</div>
+</div>
+<a href="https://wa.me/905365971599" class="bg-[#25D366] text-white px-4 py-2 rounded-button flex items-center space-x-2 hover:bg-opacity-90 transition-all whitespace-nowrap">
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-whatsapp-line"></i>
+</div>
+<span>WhatsApp</span>
+</a>
+<button class="md:hidden w-10 h-10 flex items-center justify-center" id="mobileMenuButton">
+<i class="ri-menu-line ri-xl"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div class="md:hidden bg-white shadow-lg absolute w-full left-0 top-full hidden transition-all duration-300" id="mobileMenu">
+<div class="container mx-auto px-4 py-3">
+<nav class="flex flex-col space-y-4">
+<a href="#home" class="font-medium py-2 hover:text-primary transition-colors">Ana Sayfa</a>
+<a href="#about" class="font-medium py-2 hover:text-primary transition-colors">Hakkımızda</a>
+<a href="#products" class="font-medium py-2 hover:text-primary transition-colors">Ürünlerimiz</a>
+<a href="#contact" class="font-medium py-2 hover:text-primary transition-colors">İletişim</a>
+</nav>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section id="home" class="hero-section min-h-screen flex items-center pt-16">
+<div class="container mx-auto px-4 w-full">
+<div class="max-w-2xl text-white">
+<h1 class="text-4xl md:text-5xl font-bold mb-6">Kaliteli Erkek Pijama Toptan Satış</h1>
+<p class="text-lg mb-8">Türkiye'nin önde gelen erkek pijama üreticisi olarak, en kaliteli kumaşlarla üretilmiş konforlu ve şık ürünlerimizi keşfedin. Toptan satışlarımızla işinizi büyütün.</p>
+<div class="flex flex-wrap gap-4">
+<a href="#contact" class="bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap"><span>İletişim</span></a>
+<a href="#products" class="bg-white text-primary px-6 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap">Ürünleri Keşfet</a>
+</div>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+<div class="w-10 h-10 flex items-center justify-center text-white">
+<i class="ri-arrow-down-line ri-xl"></i>
+</div>
+</div>
+</section>
+<!-- Features Section -->
+<section id="features" class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-lg shadow-md text-center group feature-card">
+<div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="ri-award-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Premium Kalite</h3>
+<p class="text-gray-600">En kaliteli kumaşlar ve üstün işçilik ile üretilen ürünlerimiz uzun ömürlü kullanım sağlar.</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-md text-center group feature-card">
+<div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="ri-truck-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Hızlı Teslimat</h3>
+<p class="text-gray-600">Siparişleriniz özenle hazırlanıp en kısa sürede kargonuza teslim edilir.</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-md text-center group feature-card">
+<div class="w-16 h-16 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mx-auto mb-6">
+<i class="ri-customer-service-2-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Müşteri Memnuniyeti</h3>
+<p class="text-gray-600">Müşteri odaklı yaklaşımımız ile her zaman memnuniyetinizi ön planda tutuyoruz.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Products Section -->
+<section id="products" class="py-16">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-4">Ürün Kategorilerimiz</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Farklı mevsim ve ihtiyaçlara uygun geniş ürün yelpazemiz ile her zevke hitap eden erkek pijama çeşitlerimizi keşfedin.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white rounded-lg shadow-md overflow-hidden group product-card">
+<div class="relative h-64">
+<img src="https://readdy.ai/api/search-image?query=High-quality%2520men%2527s%2520winter%2520pajamas%2520made%2520of%2520warm%2520flannel%2520fabric%2520in%2520classic%2520plaid%2520patterns.%2520The%2520pajamas%2520are%2520displayed%2520on%2520a%2520clean%2520white%2520background%2520with%2520professional%2520lighting%2520to%2520showcase%2520the%2520texture%2520and%2520details.%2520The%2520image%2520has%2520a%2520premium%2520and%2520cozy%2520feel%2520appropriate%2520for%2520a%2520wholesale%2520website.&width=600&height=400&seq=2&orientation=landscape" alt="Kışlık Pijamalar" class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105">
+<!-- <div class="product-overlay absolute inset-0 bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 flex items-center justify-center">
+<a href="#" class="bg-white text-primary px-6 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap">İncele</a>
+</div> -->
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">Kışlık Pijamalar</h3>
+<p class="text-gray-600 mb-4">Soğuk kış gecelerinde sıcak tutacak polar ve kalın pamuklu pijama takımları.</p>
+<!-- <div class="flex items-center justify-between">
+<span class="text-sm text-gray-500">12 Ürün</span>
+<a href="#" class="text-primary font-medium flex items-center">
+<span>Detaylar</span>
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div> -->
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden group product-card">
+<div class="relative h-64">
+<img src="https://readdy.ai/api/search-image?query=Lightweight%2520men%2527s%2520summer%2520pajamas%2520in%2520cotton%2520fabric%2520with%2520modern%2520patterns%2520and%2520designs.%2520The%2520pajamas%2520are%2520displayed%2520on%2520a%2520clean%2520white%2520background%2520with%2520professional%2520lighting%2520to%2520showcase%2520the%2520breathable%2520fabric%2520and%2520comfortable%2520fit.%2520The%2520image%2520has%2520a%2520fresh%2520and%2520premium%2520feel%2520appropriate%2520for%2520a%2520wholesale%2520website.&width=600&height=400&seq=3&orientation=landscape" alt="Yazlık Pijamalar" class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105">
+<!-- <div class="product-overlay absolute inset-0 bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 flex items-center justify-center">
+<a href="#" class="bg-white text-primary px-6 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap">İncele</a>
+</div> -->
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">Yazlık Pijamalar</h3>
+<p class="text-gray-600 mb-4">Sıcak yaz gecelerinde ferah ve konforlu ince pamuklu pijama takımları.</p>
+<!-- <div class="flex items-center justify-between">
+<span class="text-sm text-gray-500">15 Ürün</span>
+<a href="#" class="text-primary font-medium flex items-center">
+<span>Detaylar</span>
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div> -->
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden group product-card">
+<div class="relative h-64">
+<img src="https://readdy.ai/api/search-image?query=Premium%2520men%2527s%2520cotton%2520pajamas%2520in%2520solid%2520colors%2520and%2520simple%2520elegant%2520designs.%2520The%2520pajamas%2520are%2520displayed%2520on%2520a%2520clean%2520white%2520background%2520with%2520professional%2520lighting%2520to%2520showcase%2520the%2520high-quality%2520cotton%2520fabric%2520and%2520comfortable%2520fit.%2520The%2520image%2520has%2520a%2520sophisticated%2520and%2520premium%2520feel%2520appropriate%2520for%2520a%2520wholesale%2520website.&width=600&height=400&seq=4&orientation=landscape" alt="Pamuklu Pijamalar" class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105">
+<!-- <div class="product-overlay absolute inset-0 bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 flex items-center justify-center">
+<a href="#" class="bg-white text-primary px-6 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap">İncele</a>
+</div> -->
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">Pamuklu Pijamalar</h3>
+<p class="text-gray-600 mb-4">Doğal %100 pamuklu kumaştan üretilen nefes alabilir ve konforlu pijama takımları.</p>
+<!-- <div class="flex items-center justify-between">
+<span class="text-sm text-gray-500">18 Ürün</span>
+<a href="#" class="text-primary font-medium flex items-center">
+<span>Detaylar</span>
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div> -->
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden group product-card">
+<div class="relative h-64">
+<img src="https://readdy.ai/api/search-image?query=Luxurious%2520men%2527s%2520satin%2520pajamas%2520in%2520rich%2520colors%2520with%2520elegant%2520piping%2520details.%2520The%2520pajamas%2520are%2520displayed%2520on%2520a%2520clean%2520white%2520background%2520with%2520professional%2520lighting%2520to%2520showcase%2520the%2520smooth%2520fabric%2520and%2520premium%2520finish.%2520The%2520image%2520has%2520a%2520luxurious%2520and%2520sophisticated%2520feel%2520appropriate%2520for%2520a%2520wholesale%2520website.&width=600&height=400&seq=5&orientation=landscape" alt="Saten Pijamalar" class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105">
+<!-- <div class="product-overlay absolute inset-0 bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 flex items-center justify-center">
+<a href="#" class="bg-white text-primary px-6 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap">İncele</a>
+</div> -->
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">Saten Pijamalar</h3>
+<p class="text-gray-600 mb-4">Lüks görünüm ve yumuşak dokunuş sunan premium saten pijama takımları.</p>
+<!-- <div class="flex items-center justify-between">
+<span class="text-sm text-gray-500">8 Ürün</span>
+<a href="#" class="text-primary font-medium flex items-center">
+<span>Detaylar</span>
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div> -->
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden group product-card">
+<div class="relative h-64">
+<img src="https://readdy.ai/api/search-image?query=Warm%2520men%2527s%2520fleece%2520pajamas%2520in%2520cozy%2520designs%2520and%2520soft%2520textures.%2520The%2520pajamas%2520are%2520displayed%2520on%2520a%2520clean%2520white%2520background%2520with%2520professional%2520lighting%2520to%2520showcase%2520the%2520plush%2520fabric%2520and%2520comfortable%2520fit.%2520The%2520image%2520has%2520a%2520warm%2520and%2520inviting%2520feel%2520appropriate%2520for%2520a%2520wholesale%2520website.&width=600&height=400&seq=6&orientation=landscape" alt="Polar Pijamalar" class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105">
+<!-- <div class="product-overlay absolute inset-0 bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 flex items-center justify-center">
+<a href="#" class="bg-white text-primary px-6 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap">İncele</a>
+</div> -->
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">Polar Pijamalar</h3>
+<p class="text-gray-600 mb-4">Ekstra sıcak tutan yumuşak polar kumaştan üretilen kışlık pijama takımları.</p>
+<!-- <div class="flex items-center justify-between">
+<span class="text-sm text-gray-500">10 Ürün</span>
+<a href="#" class="text-primary font-medium flex items-center">
+<span>Detaylar</span>
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div> -->
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-md overflow-hidden group product-card">
+<div class="relative h-64">
+<img src="https://readdy.ai/api/search-image?query=Stylish%2520men%2527s%2520lounge%2520sets%2520with%2520modern%2520designs%2520and%2520comfortable%2520fabrics.%2520The%2520sets%2520are%2520displayed%2520on%2520a%2520clean%2520white%2520background%2520with%2520professional%2520lighting%2520to%2520showcase%2520the%2520quality%2520materials%2520and%2520contemporary%2520style.%2520The%2520image%2520has%2520a%2520trendy%2520and%2520premium%2520feel%2520appropriate%2520for%2520a%2520wholesale%2520website.&width=600&height=400&seq=7&orientation=landscape" alt="Ev Giyim Setleri" class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105">
+<!-- <div class="product-overlay absolute inset-0 bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 flex items-center justify-center">
+<a href="#" class="bg-white text-primary px-6 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap">İncele</a>
+</div> -->
+</div>
+<div class="p-6">
+<h3 class="text-xl font-semibold mb-2">Ev Giyim Setleri</h3>
+<p class="text-gray-600 mb-4">Hem evde rahat hem de şık görünmek isteyenler için özel tasarım ev giyim setleri.</p>
+<!-- <div class="flex items-center justify-between">
+<span class="text-sm text-gray-500">14 Ürün</span>
+<a href="#" class="text-primary font-medium flex items-center">
+<span>Detaylar</span>
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div> -->
+</div>
+</div>
+</div>
+<!-- <div class="text-center mt-12">
+<a href="#" class="bg-primary text-white px-8 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all inline-block whitespace-nowrap">Tüm Ürünleri Gör</a>
+</div> -->
+</div>
+</section>
+<!-- About Section -->
+<section id="about" class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<img src="https://readdy.ai/api/search-image?query=Modern%2520textile%2520factory%2520with%2520professional%2520workers%2520producing%2520high-quality%2520men%2527s%2520pajamas.%2520The%2520image%2520shows%2520a%2520clean%2520and%2520organized%2520production%2520facility%2520with%2520advanced%2520sewing%2520machines%2520and%2520quality%2520control%2520processes.%2520The%2520atmosphere%2520is%2520professional%2520and%2520demonstrates%2520high%2520manufacturing%2520standards.&width=600&height=500&seq=8&orientation=landscape" alt="Hakkımızda" class="rounded-lg shadow-lg w-full">
+</div>
+<div>
+<h2 class="text-3xl font-bold mb-6">Hakkımızda</h2>
+<p class="text-gray-600 mb-6">2005 yılında İstanbul'da kurulan firmamız, erkek pijama üretimi ve toptan satışı konusunda Türkiye'nin önde gelen markalarından biri haline gelmiştir. 5.000 m² kapalı alanda, günlük 2.000 adet üretim kapasitesi ile müşterilerimize hizmet vermekteyiz.</p>
+<p class="text-gray-600 mb-6">Kaliteli kumaş seçimi, özenli dikişler ve modern tasarımlar ile ürettiğimiz pijamalar, hem yurt içi hem de yurt dışı pazarlarda büyük beğeni toplamaktadır. İhracat yaptığımız 15 ülkede Türk tekstil kalitesini başarıyla temsil etmekteyiz.</p>
+<div class="grid grid-cols-2 gap-6 mb-8">
+<div class="bg-white p-6 rounded-lg shadow-md mission">
+<div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-focus-3-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2">Misyonumuz</h3>
+<p class="text-gray-600">Kaliteli, konforlu ve şık erkek pijama ürünlerini uygun fiyatlarla müşterilerimize sunmak.</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md vision">
+<div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-eye-line ri-xl text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2">Vizyonumuz</h3>
+<p class="text-gray-600">Erkek pijama sektöründe global ölçekte tanınan bir marka olmak.</p>
+</div>
+</div>
+<div id = "keyfigures">
+<div class="flex flex-wrap gap-8">
+<div class="text-center">
+<div class="text-3xl font-bold text-primary mb-1">18+</div>
+<div class="text-gray-600">Yıllık Deneyim</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-bold text-primary mb-1">50+</div>
+<div class="text-gray-600">Çalışan</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-bold text-primary mb-1">15+</div>
+<div class="text-gray-600">İhracat Ülkesi</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-bold text-primary mb-1">2000+</div>
+<div class="text-gray-600">Günlük Üretim</div>
+</div>
+<div class="text-center">
+<div class="text-3xl font-bold text-primary mb-1">500+</div>
+<div class="text-gray-600">m<sup>2</sup> Üretim Alanı</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<!-- <section class="py-16">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-4">Müşteri Yorumları</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">İş ortaklarımızın bizimle çalışma deneyimleri hakkında ne söylediklerini öğrenin.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-lg shadow-md">
+<div class="flex items-center text-yellow-400 mb-4">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+<p class="text-gray-600 mb-6">"Üç yıldır bu firmayla çalışıyoruz ve hem ürün kalitesi hem de teslimat süreci konusunda hiçbir sorun yaşamadık. Müşterilerimiz pijama takımlarının kalitesinden çok memnun."</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+<i class="ri-user-line ri-lg text-gray-500"></i>
+</div>
+<div>
+<h4 class="font-semibold">Ahmet Yılmaz</h4>
+<p class="text-gray-500 text-sm">Tekstil Mağazası Sahibi, İzmir</p>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-md">
+<div class="flex items-center text-yellow-400 mb-4">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+<p class="text-gray-600 mb-6">"Ürünlerin kalitesi ve çeşitliliği gerçekten etkileyici. Siparişlerimiz her zaman zamanında teslim ediliyor ve herhangi bir sorun olduğunda müşteri hizmetleri hemen yardımcı oluyor."</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+<i class="ri-user-line ri-lg text-gray-500"></i>
+</div>
+<div>
+<h4 class="font-semibold">Mehmet Kaya</h4>
+<p class="text-gray-500 text-sm">E-ticaret Sitesi Yöneticisi, Ankara</p>
+</div>
+</div>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-md">
+<div class="flex items-center text-yellow-400 mb-4">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-half-fill"></i>
+</div>
+<p class="text-gray-600 mb-6">"Beş yıldır iş ortağımız olan bu firma ile çalışmak her zaman güvenilir ve sorunsuz olmuştur. Ürün kalitesi, fiyat-performans oranı ve profesyonel yaklaşımları için teşekkür ederiz."</p>
+<div class="flex items-center">
+<div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+<i class="ri-user-line ri-lg text-gray-500"></i>
+</div>
+<div>
+<h4 class="font-semibold">Ayşe Demir</h4>
+<p class="text-gray-500 text-sm">Butik Zinciri Sahibi, İstanbul</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section> -->
+<!-- CTA Section -->
+<section class="py-16 bg-primary">
+<div class="container mx-auto px-4 text-center">
+<h2 class="text-3xl font-bold text-white mb-6">Toptan Satış Fırsatlarını Kaçırmayın!</h2>
+<p class="text-white text-lg mb-8 max-w-2xl mx-auto">Özel fiyatlar ve kampanyalardan haberdar olmak için bize ulaşın. Erkek pijama ürünlerimizle işinizi büyütün.</p>
+<a href="#contact" class="bg-white text-primary px-8 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all inline-block whitespace-nowrap">Hemen İletişime Geçin</a>
+</div>
+</section>
+<!-- Contact Section -->
+<section id="contact" class="py-16">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-4">İletişim</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Sorularınız, talepleriniz veya toptan satış fiyatları hakkında bilgi almak için bize ulaşın.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div>
+<form class="bg-white p-8 rounded-lg shadow-md">
+<h3 class="text-xl font-semibold mb-6">Bize Ulaşın</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<label for="name" class="block text-gray-700 mb-2">Ad Soyad*</label>
+<input type="text" id="name" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Ad Soyad">
+</div>
+<div>
+<label for="company" class="block text-gray-700 mb-2">Firma Adı*</label>
+<input type="text" id="company" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Firma Adı">
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+<div>
+<label for="email" class="block text-gray-700 mb-2">E-posta*</label>
+<input type="email" id="email" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="E-posta Adresiniz">
+</div>
+<div>
+<label for="phone" class="block text-gray-700 mb-2">Telefon</label>
+<input type="tel" id="phone"  class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Telefon Numaranız">
+</div>
+</div>
+<div class="mb-6">
+<label for="subject" class="block text-gray-700 mb-2">Konu*</label>
+<input type="text" id="subject" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Mesajınızın Konusu">
+</div>
+<div class="mb-6">
+<label for="message" class="block text-gray-700 mb-2">Mesajınız*</label>
+<textarea id="message" required rows="5" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Mesajınızı buraya yazın..."></textarea>
+</div>
+<!-- <div class="mb-6">
+<label class="custom-checkbox">
+<input type="checkbox">
+<span class="checkmark"></span>
+<span class="text-gray-700 ml-2">Kişisel verilerimin işlenmesine izin veriyorum.</span>
+</label>
+</div> -->
+<button type="submit" class="bg-primary text-white px-6 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all w-full whitespace-nowrap">Gönder</button>
+</form>
+</div>
+<div>
+
+<div class="bg-white p-8 rounded-lg shadow-md mb-8 info-card">
+<h3 class="text-xl font-semibold mb-6">İletişim Bilgilerimiz</h3>
+<div class="space-y-4">
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+<i class="ri-map-pin-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold mb-1">Adres</h4>
+<p class="text-gray-600">Telsiz Mahallesi Balıklı Yolu Sokak No:15/A Zeytinburnu, İstanbul, Türkiye</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+<i class="ri-phone-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold mb-1">Telefon</h4>
+<p class="text-gray-600">+90 212 516 92 89</p>
+<p class="text-gray-600">+90 536 597 15 99</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+<i class="ri-mail-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold mb-1">E-posta</h4>
+<p class="text-gray-600">info@rimolitekstil.com</p>
+</div>
+</div>
+<div class="flex items-start">
+<div class="w-10 h-10 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+<i class="ri-time-line text-primary"></i>
+</div>
+<div>
+<h4 class="font-semibold mb-1">Çalışma Saatleri</h4>
+<p class="text-gray-600">Pazartesi - Cuma: 08:00 - 19:00</p>
+<p class="text-gray-600">Cumartesi: 08:00 - 15:00</p>
+</div>
+</div>
+</div>
+<div class="mt-8">
+<h4 class="font-semibold mb-4">Sosyal Medya</h4>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<i class="ri-youtube-line"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container mx-auto px-4 mt-8 map-card">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+    <div class="bg-white p-8 rounded-lg shadow-md mb-8 flex flex-col items-center">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden h-80 w-full mb-4">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d752.7776771424614!2d28.909503!3d41.00095!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabba6e4a3c5bf%3A0xdd4731cc8b7a31d6!2sTelsiz%2C%2085%2F9.%20Sk.%20No%3A47%2C%2034020%20Zeytinburnu%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1747954005898!5m2!1str!2str"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+        <h4 class="font-semibold mb-4">Mağaza</h4>
+    </div>
+    <div class="bg-white p-8 rounded-lg shadow-md mb-8 flex flex-col items-center">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden h-80 w-full mb-4">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3011.8736804580735!2d29.2615924!3d40.9842468!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cad0523718b92b%3A0x8b0c3efa44957cb6!2sBattalgazi%2C%20G%C3%BCzelbah%C3%A7e%20Sk.%20No%3A2%20Kat%3A4%2C%2034935%20Sultanbeyli%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1747954340898!5m2!1str!2str"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+        </div>
+        <h4 class="font-semibold mb-4">Fabrika</h4>
+    </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div>
+<a href="#" class="inline-block mb-6">
+<img src="RimoliLogo.png" alt="Rimoli Tekstil" class="h-16 w-auto object-contain brightness-80">
+</a>
+<p class="text-gray-400 mb-6">2005 yılından bu yana kaliteli erkek pijama üretimi ve toptan satışı konusunda Türkiye'nin lider firmalarından biri olarak hizmet vermekteyiz.</p>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+<i class="ri-youtube-line"></i>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-lg font-semibold mb-6">Hızlı Bağlantılar</h3>
+<ul class="space-y-3">
+<li><a href="#home" class="text-gray-400 hover:text-white transition-colors">Ana Sayfa</a></li>
+<li><a href="#about" class="text-gray-400 hover:text-white transition-colors">Hakkımızda</a></li>
+<li><a href="#products" class="text-gray-400 hover:text-white transition-colors">Ürünlerimiz</a></li>
+<li><a href="#contact" class="text-gray-400 hover:text-white transition-colors">İletişim</a></li>
+<!-- <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Gizlilik Politikası</a></li> -->
+<!-- <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Kullanım Şartları</a></li> -->
+</ul>
+</div>
+<!-- <div>
+<h3 class="text-lg font-semibold mb-6">Ürün Kategorileri</h3>
+<ul class="space-y-3">
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Kışlık Pijamalar</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Yazlık Pijamalar</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Pamuklu Pijamalar</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Saten Pijamalar</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Polar Pijamalar</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white transition-colors">Ev Giyim Setleri</a></li>
+</ul>
+</div> -->
+<div>
+<h3 class="text-lg font-semibold mb-6">İletişim</h3>
+<ul class="space-y-4">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mr-3 mt-1">
+<i class="ri-map-pin-line"></i>
+</div>
+<span class="text-gray-400">Tekstil Sanayi Bölgesi, Organize Sanayi Bulvarı No: 123, Bağcılar, İstanbul</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mr-3 mt-1">
+<i class="ri-phone-line"></i>
+</div>
+<span class="text-gray-400">+90 212 516 92 89 / +90 536 597 15 99</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mr-3 mt-1">
+<i class="ri-mail-line"></i>
+</div>
+<span class="text-gray-400">info@rimolitekstil.com</span>
+</li>
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mr-3 mt-1">
+<i class="ri-time-line"></i>
+</div>
+<span class="text-gray-400">Pazartesi - Cuma: 08:30 - 18:00</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+<p class="text-gray-400 text-sm mb-4 md:mb-0 copyright-card">© 2025 Rimoli Tekstil. Tüm hakları saklıdır.</p>
+<!-- <div class="flex items-center space-x-4">
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-cash-fill ri-lg"></i>
+</div>
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-mastercard-fill ri-lg"></i>
+</div>
+<div class="w-8 h-8 flex items-center justify-center">
+<i class="ri-paypal-fill ri-lg"></i>
+</div>
+</div> -->
+</div>
+</div>
+</footer>
+<script id="mobileMenuScript">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.getElementById('mobileMenuButton');
+const mobileMenu = document.getElementById('mobileMenu');
+mobileMenuButton.addEventListener('click', function() {
+if (mobileMenu.classList.contains('hidden')) {
+mobileMenu.classList.remove('hidden');
+} else {
+mobileMenu.classList.add('hidden');
+}
+});
+// Close mobile menu when clicking on a link
+const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+mobileMenuLinks.forEach(link => {
+link.addEventListener('click', function() {
+mobileMenu.classList.add('hidden');
+});
+});
+});
+</script>
+<script id="themeToggleScript">
+document.addEventListener('DOMContentLoaded', function() {
+const themeToggle = document.getElementById('themeToggle');
+const html = document.documentElement;
+const translations = {
+tr: {
+nav: {
+home: 'Ana Sayfa',
+about: 'Hakkımızda',
+products: 'Ürünlerimiz',
+contact: 'İletişim'
+},
+hero: {
+title: 'Kaliteli Erkek Pijama Toptan Satış',
+description: 'Türkiye\'nin önde gelen erkek pijama üreticisi olarak, en kaliteli kumaşlarla üretilmiş konforlu ve şık ürünlerimizi keşfedin. Toptan satışlarımızla işinizi büyütün.',
+cta: {
+quote: 'İletişim Kur',
+discover: 'Ürünleri Keşfet'
+}
+},
+features: {
+quality: {
+title: 'Premium Kalite',
+desc: 'En kaliteli kumaşlar ve üstün işçilik ile üretilen ürünlerimiz uzun ömürlü kullanım sağlar.'
+},
+delivery: {
+title: 'Hızlı Teslimat',
+desc: 'Siparişleriniz özenle hazırlanıp en kısa sürede kargonuza teslim edilir.'
+},
+satisfaction: {
+title: 'Müşteri Memnuniyeti',
+desc: 'Müşteri odaklı yaklaşımımız ile her zaman memnuniyetinizi ön planda tutuyoruz.'
+}
+},
+products: {
+title: 'Ürün Kategorilerimiz',
+subtitle: 'Farklı mevsim ve ihtiyaçlara uygun geniş ürün yelpazemiz ile her zevke hitap eden erkek pijama çeşitlerimizi keşfedin.',
+categories: {
+winter: {
+title: 'Kışlık Pijamalar',
+desc: 'Soğuk kış gecelerinde sıcak tutacak polar ve kalın pamuklu pijama takımları.'
+},
+summer: {
+title: 'Yazlık Pijamalar',
+desc: 'Sıcak yaz gecelerinde ferah ve konforlu ince pamuklu pijama takımları.'
+},
+cotton: {
+title: 'Pamuklu Pijamalar',
+desc: 'Doğal %100 pamuklu kumaştan üretilen nefes alabilir ve konforlu pijama takımları.'
+},
+satin: {
+title: 'Saten Pijamalar',
+desc: 'Lüks görünüm ve yumuşak dokunuş sunan premium saten pijama takımları.'
+},
+fleece: {
+title: 'Polar Pijamalar',
+desc: 'Ekstra sıcak tutan yumuşak polar kumaştan üretilen kışlık pijama takımları.'
+},
+homewear: {
+title: 'Ev Giyim Setleri',
+desc: 'Hem evde rahat hem de şık görünmek isteyenler için özel tasarım ev giyim setleri.'
+}
+}
+},
+about: {
+title: 'Hakkımızda',
+content: '2005 yılında İstanbul\'da kurulan firmamız, erkek pijama üretimi ve toptan satışı konusunda Türkiye\'nin önde gelen markalarından biri haline gelmiştir.',
+mission: {
+title: 'Misyonumuz',
+desc: 'Kaliteli, konforlu ve şık erkek pijama ürünlerini uygun fiyatlarla müşterilerimize sunmak.'
+},
+vision: {
+title: 'Vizyonumuz',
+desc: 'Erkek pijama sektöründe global ölçekte tanınan bir marka olmak.'
+},
+keyfigures:{
+    experience:"Yıllık Deneyim",
+    employee:"Çalışan",
+    export:"İhracat Ülkesi",
+    production:"Günlük Üretim",
+    area:"m2 Üretim Alanı"
+}
+},
+contact: {
+title: 'İletişim',
+subtitle: 'Sorularınız, talepleriniz veya toptan satış fiyatları hakkında bilgi almak için bize ulaşın.',
+formTitle: 'Bize Ulaşın',
+form: {
+name: 'Ad Soyad*',
+company: 'Firma Adı*',
+email: 'E-posta*',
+phone: 'Telefon',
+subject: 'Konu*',
+message: 'Mesajınız*',
+consent: 'Kişisel verilerimin işlenmesine izin veriyorum.',
+submit: 'Gönder'
+},
+infoTitle: 'İletişim Bilgilerimiz',
+info: {
+address: 'Adres',
+phone: 'Telefon',
+email: 'E-posta',
+hours: 'Çalışma Saatleri',
+social: 'Sosyal Medya'
+}
+,map:{
+    store:"Mağaza",
+    factory:"Fabrika"
+}
+}
+,copyright: '© 2025 Rimoli Tekstil. Tüm hakları saklıdır.'
+},
+en: {
+nav: {
+home: 'Home',
+about: 'About',
+products: 'Products',
+contact: 'Contact'
+},
+hero: {
+title: 'Quality Men\'s Pajamas Wholesale',
+description: 'Discover our comfortable and stylish products made with the highest quality fabrics as Turkey\'s leading men\'s pajama manufacturer. Grow your business with our wholesale options.',
+cta: {
+quote: 'Contact Us',
+discover: 'Discover Products'
+}
+},
+features: {
+quality: {
+title: 'Premium Quality',
+desc: 'Our products provide long-lasting use with the highest quality fabrics and superior workmanship.'
+},
+delivery: {
+title: 'Fast Delivery',
+desc: 'Your orders are carefully prepared and delivered to your cargo in the shortest time.'
+},
+satisfaction: {
+title: 'Customer Satisfaction',
+desc: 'We always prioritize your satisfaction with our customer-focused approach.'
+}
+},
+products: {
+title: 'Product Categories',
+subtitle: 'Discover our men\'s pajama varieties that appeal to every taste with our wide product range suitable for different seasons and needs.',
+categories: {
+winter: {
+title: 'Winter Pajamas',
+desc: 'Fleece and thick cotton pajama sets to keep you warm on cold winter nights.'
+},
+summer: {
+title: 'Summer Pajamas',
+desc: 'Fresh and comfortable thin cotton pajama sets for hot summer nights.'
+},
+cotton: {
+title: '100% Cotton Pajamas',
+desc: 'Breathable and comfortable pajama sets made from natural 100% cotton fabric.'
+},
+satin: {
+title: 'Satin Pajamas',
+desc: 'Premium satin pajama sets offering luxurious appearance and soft touch.'
+},
+fleece: {
+title: 'Fleece Pajamas',
+desc: 'Winter pajama sets made from soft fleece fabric that keeps extra warm.'
+},
+homewear: {
+title: 'Homewear Sets',
+desc: 'Special design homewear sets for those who want to look both comfortable and stylish at home.'
+}
+}
+},
+about: {
+title: 'About Us',
+content: 'Founded in Istanbul in 2005, our company has become one of Turkey\'s leading brands in men\'s pajama production and wholesale.',
+mission: {
+title: 'Our Mission',
+desc: 'To offer quality, comfortable and stylish men\'s pajama products to our customers at affordable prices.'
+},
+vision: {
+title: 'Our Vision',
+desc: 'To become a globally recognized brand in the men\'s pajama sector.'
+},
+keyfigures:{
+    experience:"Years of Experience",
+    employee:"Employees",
+    export:"Export Countries",
+    production:"Daily Production",
+    area:"m2 Production Area"
+}
+},
+contact: {
+title: 'Contact',
+subtitle: 'Contact us for your questions, requests or information about wholesale prices.',
+formTitle: 'Get in Touch',
+form: {
+name: 'Full Name*',
+company: 'Company Name*',
+email: 'Email*',
+phone: 'Phone',
+subject: 'Subject*',
+message: 'Your Message*',
+consent: 'I consent to the processing of my personal data.',
+submit: 'Send'
+},
+infoTitle: 'Contact Information',
+info: {
+
+address: 'Address',
+phone: 'Phone',
+email: 'Email',
+hours: 'Working Hours',
+social: 'Social Media'
+}
+,map:{
+    store:"Store",
+    factory:"Factory"
+}
+}
+,copyright: '© 2025 Rimoli Textile. All rights reserved.'
+}
+};
+// Language selector functionality
+const languageButton = document.getElementById('languageButton');
+const languageDropdown = document.getElementById('languageDropdown');
+const selectedLanguage = document.getElementById('selectedLanguage');
+const languageButtons = languageDropdown.querySelectorAll('button');
+// Get saved language preference
+const savedLanguage = localStorage.getItem('language') || 'tr';
+selectedLanguage.textContent = savedLanguage.toUpperCase();
+//Update content
+function updateContent(lang) {
+// Update navigation
+document.querySelectorAll('nav a').forEach(link => {
+const key = link.getAttribute('href').replace('#', '');
+if (translations[lang].nav[key]) {
+link.textContent = translations[lang].nav[key];
+}
+});
+// Update hero section
+const heroTitle = document.querySelector('.hero-section h1');
+const heroDesc = document.querySelector('.hero-section p');
+const heroCtaQuote = document.querySelector('.hero-section a:first-of-type');
+const heroCtaDiscover = document.querySelector('.hero-section a:last-of-type');
+if (heroTitle) heroTitle.textContent = translations[lang].hero.title;
+if (heroDesc) heroDesc.textContent = translations[lang].hero.description;
+if (heroCtaQuote) heroCtaQuote.textContent = translations[lang].hero.cta.quote;
+if (heroCtaDiscover) heroCtaDiscover.textContent = translations[lang].hero.cta.discover;
+// Update features section
+const features = translations[lang].features;
+const featureSection = document.querySelector('#features');
+if (featureSection) {
+  const featureKeys = ['quality', 'delivery', 'satisfaction'];
+  const featureCards = featureSection.querySelectorAll('.feature-card');
+  featureCards.forEach((card, index) => {
+    const key = featureKeys[index];
+    if (features[key]) {
+      const cardTitle = card.querySelector('h3');
+      const cardDesc = card.querySelector('p');
+      if (cardTitle) cardTitle.textContent = features[key].title;
+      if (cardDesc) cardDesc.textContent = features[key].desc;
+    }
+  });
+}
+// Update products section
+const products = translations[lang].products;
+const productsSection = document.querySelector('#products');
+if (productsSection) {
+const titleEl = productsSection.querySelector('h2');
+const subtitleEl = productsSection.querySelector('p');
+if (titleEl) titleEl.textContent = products.title;
+if (subtitleEl) subtitleEl.textContent = products.subtitle;
+// Update product categories
+const categories = Object.values(products.categories);
+productsSection.querySelectorAll('.product-card').forEach((card, index) => {
+if (categories[index]) {
+const cardTitle = card.querySelector('h3');
+const cardDesc = card.querySelector('p');
+if (cardTitle) cardTitle.textContent = categories[index].title;
+if (cardDesc) cardDesc.textContent = categories[index].desc;
+}
+});
+}
+// Update about section
+const about = translations[lang].about;
+const aboutSection = document.querySelector('#about');
+if (aboutSection) {
+const elements = {
+title: aboutSection.querySelector('h2'),
+content: aboutSection.querySelector('p'),
+missionTitle: aboutSection.querySelector('.mission h3'),
+missionDesc: aboutSection.querySelector('.mission p'),
+visionTitle: aboutSection.querySelector('.vision h3'),
+visionDesc: aboutSection.querySelector('.vision p')
+};
+if (elements.title) elements.title.textContent = about.title;
+if (elements.content) elements.content.textContent = about.content;
+if (elements.missionTitle) elements.missionTitle.textContent = about.mission.title;
+if (elements.missionDesc) elements.missionDesc.textContent = about.mission.desc;
+if (elements.visionTitle) elements.visionTitle.textContent = about.vision.title;
+if (elements.visionDesc) elements.visionDesc.textContent = about.vision.desc;
+}
+// Update keyfigures section
+const keyfigures = about.keyfigures;
+const keyfiguresSection = aboutSection.querySelector('#keyfigures');
+if (keyfiguresSection) {
+  const keys = ['experience', 'employee', 'export', 'production', 'area'];
+  const valueDivs = keyfiguresSection.querySelectorAll('.text-center');
+  valueDivs.forEach((div, idx) => {
+    const label = div.querySelector('.text-gray-600');
+    if (label && keyfigures[keys[idx]]) {
+      label.innerHTML = keyfigures[keys[idx]];
+    }
+  });
+}
+// Update testimonials section
+// const testimonials = translations[lang].testimonials;
+// const testimonialsSection = document.querySelector('#testimonials');
+// if (testimonialsSection) {
+  // const titleEl = testimonialsSection.querySelector('h2');
+  // const subtitleEl = testimonialsSection.querySelector('p');
+  // if (titleEl) titleEl.textContent = testimonials.title;
+  // if (subtitleEl) subtitleEl.textContent = testimonials.subtitle;
+  // const testimonialCards = testimonialsSection.querySelectorAll('.testimonial-card');
+  // testimonialCards.forEach((card, index) => {
+  //   const testimonial = testimonials.testimonials[index];
+  //   if (testimonial) {
+  //     const cardText = card.querySelector('p');
+  //     const cardName = card.querySelector('h4');
+  //     if (cardText) cardText.textContent = testimonial.text;
+  //     if (cardName) cardName.textContent = testimonial.name;
+  //   }
+  // });
+//}
+// Update contact section
+const contact = translations[lang].contact;
+const contactSection = document.querySelector('#contact');
+if (contactSection) {
+const titleEl = contactSection.querySelector('h2');
+const subtitleEl = contactSection.querySelector('p');
+if (titleEl) titleEl.textContent = contact.title;
+if (subtitleEl) subtitleEl.textContent = contact.subtitle;
+
+// Update form labels
+const form = contact.form;
+const formEl = contactSection.querySelector('form');
+if (formEl) {
+const formTitle = formEl.querySelector('h3');
+if (formTitle) formTitle.textContent = contact.formTitle || contact.title;
+const formElements = {
+name: formEl.querySelector('label[for="name"]'),
+company: formEl.querySelector('label[for="company"]'),
+email: formEl.querySelector('label[for="email"]'),
+phone: formEl.querySelector('label[for="phone"]'),
+subject: formEl.querySelector('label[for="subject"]'),
+message: formEl.querySelector('label[for="message"]'),
+consent: formEl.querySelector('.custom-checkbox span:last-child'),
+submit: formEl.querySelector('button[type="submit"]')
+};
+if (formElements.name) formElements.name.textContent = form.name;
+if (formElements.company) formElements.company.textContent = form.company;
+if (formElements.email) formElements.email.textContent = form.email;
+if (formElements.phone) formElements.phone.textContent = form.phone;
+if (formElements.subject) formElements.subject.textContent = form.subject;
+if (formElements.message) formElements.message.textContent = form.message;
+if (formElements.consent) formElements.consent.textContent = form.consent;
+if (formElements.submit) formElements.submit.textContent = form.submit;
+}
+// Update contact info
+const info = contact.info;
+const infoSection = contactSection.querySelector('.info-card');
+if (infoSection) {
+const titleEl = infoSection.querySelector('h3');
+if (titleEl) titleEl.textContent = contact.infoTitle;
+const infoKeys = ['address', 'phone', 'email', 'hours', 'social'];
+const headings = infoSection.querySelectorAll('h4');
+headings.forEach((heading, index) => {
+const keys = Object.keys(info);
+if (keys[index]) {
+heading.textContent = info[keys[index]];
+}
+});
+} 
+// Update map-card section
+const map = contact.map;
+const mapCardDivs = document.querySelectorAll('.map-card .bg-white');
+if (map && mapCardDivs.length >= 2) {
+  // Her map kartının içindeki h4'ü bul ve çevir
+  const mapTitles = [map.store, map.factory];
+  mapCardDivs.forEach((div, idx) => {
+    const h4 = div.querySelector('h4');
+    if (h4 && mapTitles[idx]) {
+      h4.textContent = mapTitles[idx];
+    }
+  });
+}
+
+// ...updateContent fonksiyonu sonunda...
+
+// Update footer section
+const footerSection = document.querySelector('footer');
+if (footerSection) {
+  // Firma açıklaması (about.content)
+  const aboutDesc = footerSection.querySelector('p.text-gray-400.mb-6');
+  if (aboutDesc) aboutDesc.textContent = about.content;
+
+  // Hızlı Bağlantılar başlığı
+  const quickLinksTitle = footerSection.querySelector('h3.text-lg.font-semibold.mb-6');
+  if (quickLinksTitle) quickLinksTitle.textContent = lang === 'tr' ? 'Hızlı Bağlantılar' : 'Quick Links';
+
+  // Hızlı Bağlantılar linkleri
+  const quickLinks = [
+    { selector: 'a[href="#home"]', key: 'home' },
+    { selector: 'a[href="#about"]', key: 'about' },
+    { selector: 'a[href="#products"]', key: 'products' },
+    { selector: 'a[href="#contact"]', key: 'contact' }
+  ];
+  quickLinks.forEach(link => {
+    const el = footerSection.querySelector(link.selector);
+    if (el && translations[lang].nav[link.key]) {
+      el.textContent = translations[lang].nav[link.key];
+    }
+  });
+
+  // İletişim başlığı
+  const contactTitle = footerSection.querySelectorAll('h3.text-lg.font-semibold.mb-6')[1];
+  if (contactTitle) contactTitle.textContent = contact.title;
+
+  // ...updateContent fonksiyonu, footer section güncellemesinin sonuna ekleyin...
+
+// Copyright metni
+const copyright = translations[lang].copyright;
+const copyrightEl = footerSection.querySelector('.copyright-card');
+if (copyrightEl) copyrightEl.textContent = copyright;
+
+}
+
+}
+}
+// Toggle dropdown
+languageButton.addEventListener('click', function(e) {
+e.stopPropagation();
+languageDropdown.classList.toggle('hidden');
+});
+// Handle language selection
+languageButtons.forEach(button => {
+button.addEventListener('click', function(e) {
+const lang = this.dataset.lang;
+selectedLanguage.textContent = lang.toUpperCase();
+localStorage.setItem('language', lang);
+languageDropdown.classList.add('hidden');
+updateContent(lang);
+});
+});
+// Initialize with saved language
+updateContent(savedLanguage);
+// Close dropdown when clicking outside
+document.addEventListener('click', function(e) {
+if (!languageButton.contains(e.target) && !languageDropdown.contains(e.target)) {
+languageDropdown.classList.add('hidden');
+}
+});
+// Check for saved theme preference or use user's system preference
+const savedTheme = localStorage.getItem('theme');
+const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+html.classList.add('dark');
+themeToggle.classList.add('dark');
+}
+themeToggle.addEventListener('click', function() {
+if (html.classList.contains('dark')) {
+html.classList.remove('dark');
+themeToggle.classList.remove('dark');
+localStorage.setItem('theme', 'light');
+themeToggle.querySelector('.theme-toggle-circle i').className = 'ri-sun-line ri-sm';
+} else {
+html.classList.add('dark');
+themeToggle.classList.add('dark');
+localStorage.setItem('theme', 'dark');
+themeToggle.querySelector('.theme-toggle-circle i').className = 'ri-moon-line ri-sm';
+}
+});
+});
+</script>
+<script id="scrollScript">
+document.addEventListener('DOMContentLoaded', function() {
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href');
+if (targetId === '#') return;
+const targetElement = document.querySelector(targetId);
+if (targetElement) {
+window.scrollTo({
+top: targetElement.offsetTop - 80, // Adjust for header height
+behavior: 'smooth'
+});
+}
+});
+});
+// Header scroll effect
+const header = document.querySelector('header');
+window.addEventListener('scroll', function() {
+if (window.scrollY > 50) {
+header.classList.add('py-2');
+header.classList.add('shadow-lg');
+} else {
+header.classList.remove('py-2');
+header.classList.remove('shadow-lg');
+}
+});
+});
+</script>
+<script id="formValidationScript">
+ 
+document.addEventListener('DOMContentLoaded', function() {
+  const formEl = document.querySelector('#contact form');
+  if (formEl) {
+    formEl.addEventListener('submit', function(e) {
+      const name = formEl.querySelector('#name');
+      const company = formEl.querySelector('#company');
+      const email = formEl.querySelector('#email');
+      const phone = formEl.querySelector('#phone');
+      const subject = formEl.querySelector('#subject');
+      const message = formEl.querySelector('#message');
+      // E-posta format kontrolü için regex
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      // Türkiye için telefon numarası kontrolü (başında 0 veya +90 olabilir, 10 hane rakam)
+      const phoneRegex = /^(?:\+90|0)?\s?\d{10}$/;
+      if (
+        !name.value.trim() ||
+        !company.value.trim() ||
+        !email.value.trim() ||
+        //!phone.value.trim() ||
+        !subject.value.trim() ||
+        !message.value.trim()
+      ) {
+        e.preventDefault();
+        alert('Lütfen tüm alanları doldurunuz.');
+        return false;
+      }
+      if (!emailRegex.test(email.value.trim())) {
+        e.preventDefault();
+        alert('Lütfen geçerli bir e-posta adresi giriniz.');
+        email.focus();
+        return false;
+      }
+      if (phone.value.trim()!='' && !phoneRegex.test(phone.value.replace(/\D/g, ''))) {
+        e.preventDefault();
+        alert('Lütfen geçerli bir telefon numarası giriniz. (Örn: 05321234567 veya +905321234567)');
+        phone.focus();
+        return false;
+      }
+    });
+  }
+});
+</script>
+</body>
+</html>
