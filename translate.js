@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       // Update map-card section
       const map = contact.map;
-      const mapCardDivs = document.querySelectorAll(".map-card .bg-white");
+      const mapCardDivs = document.querySelectorAll(".map-card");
       if (map && mapCardDivs.length >= 2) {
         // Her map kartının içindeki h4'ü bul ve çevir
         const mapTitles = [map.store, map.factory];
